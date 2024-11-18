@@ -1,0 +1,10 @@
+# Don't try to do inline comments.  Things break.
+
+.ignoreme
+.vscode
+
+# Ignore secrets
+/.env
+/*.env
+/*.env-*
+.env*
