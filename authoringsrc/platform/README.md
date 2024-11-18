@@ -1,0 +1,2 @@
+Note that "(XM Cloud source code root)/platform/..." is a reserved/magic folder path name:
+https://doc.sitecore.com/xmc/en/developers/xm-cloud/use-a-patch-file-to-customize-the-sitecore-configuration.html#create-a-patch-file
