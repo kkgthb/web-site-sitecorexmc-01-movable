@@ -3,6 +3,10 @@
 .ignoreme
 .vscode
 
+# TODO:  remove these from gitignore, eventually
+MyProjectNeedsAName.sln
+NuGet.Config
+
 # Ignore secrets
 /.env
 /*.env
