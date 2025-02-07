@@ -1,0 +1,11 @@
+---
+ID: "" # I get to make this value up myself
+Parent: "" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/sitecollection/myfirstsitecollection.yml file's ID
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523" # This value means "Folder" -- as in, there's a "components" folder alongside this YAML file with YAML files inside of it that are typed as Folder _(components are, interestingly, actually Folder-typed, so no matter what, the YAML files within will be Folder)_.
+Path: /sitecore/content/myfirstsitecollection/components
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: My Components
