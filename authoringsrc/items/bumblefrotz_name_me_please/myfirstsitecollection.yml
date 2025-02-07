@@ -1,8 +1,8 @@
 ---
 ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to ./authoringsrc/items/foobar_name_me_please/content.yml file's ID
-Template: "" # I need to refer to ./authoringsrc/items/templates/Project/mymovable01/Headless Tenant.yml file's ID
-Path: /sitecore/content/mymovable01
+Parent: "" # I can either use "0de95ae4-41ab-4d01-9eb0-67441b7c2450" or I need to refer to ./authoringsrc/items/00_foobar_name_me_please/content.yml file's ID -- I've seen it done both ways.  I can delete the "foobar" file if I do "0de95ae4-41ab-4d01-9eb0-67441b7c2450", it seems.
+Template: "" # I need to refer to ./authoringsrc/items/templates/Project/myfirstsitecollection/Headless Tenant.yml file's ID
+Path: /sitecore/content/myfirstsitecollection
 BranchID: "2d3805b9-3089-44f3-b952-d45c44add7f8" # This GUID keeps showing up in disparate codebases, even though I can't find it on Google.  It must be built into Sitecore or SXA and have someting to do with defining the scope of a "site."
 SharedFields:
 - ID: "102b58da-2a86-4953-b3cd-c9f91256b657" # This GUID keeps showing up in disparate codebases, even though I can't find it on Google.  It must be built into Sitecore or SXA and have someting to do with defining the scope of a "site."

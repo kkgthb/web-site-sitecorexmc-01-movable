@@ -1,8 +1,8 @@
 ---
 ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to ./authoringsrc/items/bumblefrotz_name_me_please/mymovable01.yml file's ID
-Template: "" # I need to refer to ./authoringsrc/items/templates/Project/mymovable01/Headless Site.yml file's ID
-Path: /sitecore/content/movable01/running_out_name_me_please
+Parent: "" # I need to refer to ./authoringsrc/items/bumblefrotz_name_me_please/myfirstsitecollection.yml file's ID
+Template: "" # I need to refer to ./authoringsrc/items/templates/Project/myfirstsitecollection/Headless Site.yml file's ID
+Path: /sitecore/content/myfirstsitecollection/myveryfirstscsite
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e" # This GUID keeps showing up in disparate codebases.
 SharedFields:
 - ID: "1230d2cb-4948-4d43-8a3b-b39978f6f1b3" # This GUID shows up both in disparate codebases and in various places within mine.  The included GUID values within it also show up across various codebases (some may have even more, but this was the overlap).
