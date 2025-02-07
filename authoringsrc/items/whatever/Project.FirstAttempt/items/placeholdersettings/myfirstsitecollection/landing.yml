@@ -7,6 +7,9 @@ SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
   Value: "landing"
-- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222" # Like this one https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/renderings/jss-nextjs-storybook/Styleguide-Layout-Reuse.yml#L4
   Hint: Allowed Controls
-  Value: "{TODO-ONE-OR-MORE-RENDERINGS-GUIDS-OF-MINE-HERE}" # Like this one https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/renderings/jss-nextjs-storybook/Styleguide-Layout-Reuse.yml#L4
+  Value: |
+    {TODO-PINK-RENDERING-GUID}
+    {TODO-BLUE-RENDERING-GUID}
+    {TODO-TASKLIST-RENDERING-GUID}

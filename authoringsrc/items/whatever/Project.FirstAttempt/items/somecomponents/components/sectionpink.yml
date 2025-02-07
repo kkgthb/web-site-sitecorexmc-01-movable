@@ -2,7 +2,7 @@
 ID: "" # I get to make this value up myself
 Parent: "" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/somecomponents/components.yml file's ID
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523" # This value means "Folder" components are folders, for whatever reason.
-Path: /sitecore/content/myfirstsitecollection/components/blahblah
+Path: /sitecore/content/myfirstsitecollection/components/sectionpink
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318" # This GUID keeps showing up in disparate codebases.
   Hint: __Icon
@@ -11,10 +11,10 @@ SharedFields:
   Hint: __Masters
   Value: |
     {A87A00B1-E6DB-45AB-8B54-636FEC3B5523}
-    {GUID-OF-TEMPLATE-TODO-SOMETHING-UNKNOWN}
+    {GUID-OF-TEMPLATE-TODO-SOMETHING-PINK}
 Languages:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb" # This GUID keeps showing up in disparate codebases.
     Hint: __Display name
-    Value: Blah Blah
+    Value: Pink Section

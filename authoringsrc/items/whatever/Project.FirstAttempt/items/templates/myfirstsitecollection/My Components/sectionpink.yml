@@ -1,0 +1,16 @@
+---
+# TODO:  Should I move this file and any folders named after it into being beneath the 'myfirstsitecollection' folder?  Is it okay for a bunch of components to be a sibling to their site collection / tenant template in the repo?
+ID: "" # I get to make this value up myself
+Parent: "" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection/My Components.yml file's ID
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db" # This value means "Template."  I probably still need a "sectionpink" folder with a "__Standard Values.yml" file in it, though.
+Path: /sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318" # This GUID keeps showing up in disparate codebases.
+  Hint: __Icon
+  Value: Office/16x16/document_tag.png # TODO:  CHANGE THIS TO SOMETHING PINKER
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb" # This GUID keeps showing up in disparate codebases.
+    Hint: __Display name
+    Value: Pink Section

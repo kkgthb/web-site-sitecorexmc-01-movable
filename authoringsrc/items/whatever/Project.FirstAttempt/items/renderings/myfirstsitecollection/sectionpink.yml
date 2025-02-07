@@ -2,7 +2,7 @@
 ID: "" # I get to make this value up myself
 Parent: "" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/renderings/myfirstsitecollection.yml file's ID
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Project/myfirstsitecollection/unknown
+Path: /sitecore/layout/Renderings/Project/myfirstsitecollection/sectionpink
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0" # This GUID keeps showing up in disparate codebases.
   Hint: componentName
@@ -12,13 +12,13 @@ SharedFields:
   Value: Office/16x16/document_tag.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f" # This GUID keeps showing up in disparate codebases.
   Hint: Datasource Template
-  Value: "/sitecore/templates/Project/myfirstsitecollection/TODO-SOMETHING-UNKNOWN"
+  Value: /sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016" # This GUID keeps showing up in disparate codebases.
   Hint: Datasource Location
-  Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/TODO-SOMETHING-ALSO-UNKNOWN-BUT-IT-ALSO-NEEDS-TO-LINK-TO-MY-TODO-SOMETHING-UNKNOWN-TEMPLATE-AND-MAYBE-ALSO-NEEDS-TO-LINK-TO-THE-GUID-FOR-SYSTEM-FOLDER-TEMPLATE-TYPE-BUT-NOT-SURE-WHY-OH-AND-ALSO-MAYBE-ITS-SOMEHOW-JUST-CONTENT-OF-TYPE-FOLDER" # https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/content/jss-nextjs-storybook/Components/ContentBlock.yml
+  Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/TODO-SOMETHING-ALSO-PINK-BUT-IT-ALSO-NEEDS-TO-LINK-TO-MY-TODO-SOMETHING-PINK-TEMPLATE-AND-MAYBE-ALSO-NEEDS-TO-LINK-TO-THE-GUID-FOR-SYSTEM-FOLDER-TEMPLATE-TYPE-BUT-NOT-SURE-WHY-OH-AND-ALSO-MAYBE-ITS-SOMEHOW-JUST-CONTENT-OF-TYPE-FOLDER" # https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/content/jss-nextjs-storybook/Components/ContentBlock.yml
 Languages:
 - Language: en
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb" # This GUID keeps showing up in disparate codebases.
     Hint: __Display name
-    Value: Unknown Mystery
+    Value: Pink Section
