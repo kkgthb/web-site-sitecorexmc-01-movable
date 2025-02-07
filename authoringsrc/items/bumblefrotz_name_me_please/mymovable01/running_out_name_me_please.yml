@@ -1,0 +1,21 @@
+---
+ID: "" # I get to make this value up myself
+Parent: "" # I need to refer to ./authoringsrc/items/bumblefrotz_name_me_please/mymovable01.yml file's ID
+Template: "" # I need to refer to ./authoringsrc/items/templates/Project/mymovable01/Headless Site.yml file's ID
+Path: /sitecore/content/movable01/running_out_name_me_please
+BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e" # This GUID keeps showing up in disparate codebases.
+SharedFields:
+- ID: "1230d2cb-4948-4d43-8a3b-b39978f6f1b3" # This GUID shows up both in disparate codebases and in various places within mine.  The included GUID values within it also show up across various codebases (some may have even more, but this was the overlap).
+  Hint: Modules
+  Value: |
+    {COMPARE-LISTS}
+    {TODO-LATER}
+- ID: "2b2fe9fd-78a6-40eb-b9f9-28409d8d3700" # This GUID keeps showing up in disparate codebases.
+  Hint: SitemapMediaItems
+  Value: "{TODO_CREATE_FILE_WITH_THIS_ID}"
+- ID: "33d9005e-1f71-415f-b107-53b965c3b037" # This GUID keeps showing up in disparate codebases.
+  Hint: SiteMediaLibrary
+  Value: "{TODO_CREATE_FILE_WITH_THIS_ID}"
+- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc" # This GUID keeps showing up in disparate codebases.
+  Hint: __Originator
+  Value: "{A0EECF65-09AD-4A10-AE46-7DF70106CFE6}" # This GUID (the value) also keeps showing up in disparate codebases.

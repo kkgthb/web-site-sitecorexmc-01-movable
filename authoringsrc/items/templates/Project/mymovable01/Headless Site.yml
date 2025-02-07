@@ -1,6 +1,6 @@
 ---
 ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to mymovable01.yml YAML
+Parent: "" # I need to refer to ./authoringsrc/items/templates/Project/mymovable01.yml file's ID
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db" # This value means "Template."  I probably still need a "Headless Site" folder with a "__Standard Values.yml" file in it, though.
 Path: /sitecore/templates/Project/mymovable01/Headless Site
 SharedFields:
