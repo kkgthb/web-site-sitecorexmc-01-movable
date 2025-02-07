@@ -1,7 +1,7 @@
 ---
 ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to ./authoringsrc/items/bumblefrotz_name_me_please/myfirstsitecollection.yml file's ID
-Template: "" # I need to refer to ./authoringsrc/items/templates/Project/myfirstsitecollection/Headless Site.yml file's ID
+Parent: "" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/sitecollection/myfirstsitecollection.yml file's ID
+Template: "" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection/Headless Site.yml file's ID
 Path: /sitecore/content/myfirstsitecollection/myveryfirstscsite
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e" # This GUID keeps showing up in disparate codebases.
 SharedFields:
