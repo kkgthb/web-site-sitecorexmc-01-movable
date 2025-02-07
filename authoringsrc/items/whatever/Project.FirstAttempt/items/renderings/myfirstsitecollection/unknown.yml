@@ -15,7 +15,7 @@ SharedFields:
   Value: "/sitecore/templates/Project/myfirstsitecollection/TODO-SOMETHING-UNKNOWN"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016" # This GUID keeps showing up in disparate codebases.
   Hint: Datasource Location
-  Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/TODO-SOMETHING-ALSO-UNKNOWN"
+  Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/TODO-SOMETHING-ALSO-UNKNOWN-BUT-IT-ALSO-NEEDS-TO-LINK-TO-MY-TODO-SOMETHING-UNKNOWN-TEMPLATE-AND-MAYBE-ALSO-NEEDS-TO-LINK-TO-THE-GUID-FOR-SYSTEM-FOLDER-TEMPLATE-TYPE-BUT-NOT-SURE-WHY-OH-AND-ALSO-MAYBE-ITS-SOMEHOW-JUST-CONTENT-OF-TYPE-FOLDER" # https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/content/jss-nextjs-storybook/Components/ContentBlock.yml
 Languages:
 - Language: en
   Fields:
