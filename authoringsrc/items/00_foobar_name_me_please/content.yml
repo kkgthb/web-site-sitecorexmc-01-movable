@@ -1,9 +1,0 @@
----
-ID: "" # I get to make this value up myself
-Parent: "11111111-1111-1111-1111-111111111111"
-Template: "e3e2d58c-df95-4230-adc9-279924cece84" # This value means "MainSection."
-Path: /sitecore/content # It seems that some codebases don't bother to set up this file at all.  I'm not sure how that works, though, since this seems to be a self-made-up ID.  Weird.
-SharedFields:
-- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318" # I guess we all just love blue cube icons.  Note that this GUID appears as the "ID" of all icon definitions in my codebase, so it's clearly some sort of Sitecore or SXA universal GUID.
-  Hint: __Icon
-  Value: People/16x16/cubes_blue.png

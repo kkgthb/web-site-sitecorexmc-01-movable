@@ -1,0 +1,1 @@
+This is probably a good place for a `Home.yml` & `Home/` folder _(under which might appear "Agenda.yml&/," "Not Found.yml&/," "Sponsors.yml&/," "Venue.yml&/," "Workshops.yml&/," etc. if this were the Sugcon project)_.
