@@ -2,7 +2,7 @@
 ID: "" # I get to make this value up myself
 Parent: "0de95ae4-41ab-4d01-9eb0-67441b7c2450" # This GUID keeps showing up in disparate codebases.  Likely already has a "blue cube" icon and means "/sitecore/content/" and has a template of "MainSection" (e3e2d58c-df95-4230-adc9-279924cece84) and parent of 11111111-1111-1111-1111-111111111111.  Seems to save you having to define one of those yourself.
 Template: "" # I need to refer to ./authoringsrc/items/templates/Project/myfirstsitecollection/Headless Tenant.yml file's ID
-Path: /sitecore/content/myfirstsitecollection
+Path: /sitecore/content/myfirstsitecollection # Note:  a "site collection" also seems to show up called a "tenant" in some docs -- best I can figure out, they're a bit interchangeable of vocab.
 BranchID: "2d3805b9-3089-44f3-b952-d45c44add7f8" # This GUID keeps showing up in disparate codebases, even though I can't find it on Google.  It must be built into Sitecore or SXA and have someting to do with defining the scope of a "site."
 SharedFields:
 - ID: "102b58da-2a86-4953-b3cd-c9f91256b657" # This GUID keeps showing up in disparate codebases, even though I can't find it on Google.  It must be built into Sitecore or SXA and have someting to do with defining the scope of a "site."
