@@ -1,0 +1,5 @@
+---
+ID: "" # I get to make this value up myself
+Parent: "1995806f-0a84-42b5-93b0-88f0e2ff872c" # This value likely means "/sitecore/layout/renderings/Project".
+Template: "7ee0975b-0698-493e-b3a2-0b2ef33d0522" # This value means "Rendering Folder" -- as in, there's a "myfirstsitecollection" folder alongside this YAML file with YAML files inside of it that are typed as Rendering Folder, Json Rendering, etc.
+Path: /sitecore/layout/Renderings/Project/myfirstsitecollection

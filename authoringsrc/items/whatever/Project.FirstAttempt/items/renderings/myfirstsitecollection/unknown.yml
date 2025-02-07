@@ -1,0 +1,24 @@
+---
+ID: "" # I get to make this value up myself
+Parent: "" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/renderings/myfirstsitecollection.yml file's ID
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Project/myfirstsitecollection/unknown
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0" # This GUID keeps showing up in disparate codebases.
+  Hint: componentName
+  Value: unknown
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318" # This GUID keeps showing up in disparate codebases.
+  Hint: __Icon
+  Value: Office/16x16/document_tag.png
+- ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f" # This GUID keeps showing up in disparate codebases.
+  Hint: Datasource Template
+  Value: "/sitecore/templates/Project/myfirstsitecollection/TODO-SOMETHING-UNKNOWN"
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016" # This GUID keeps showing up in disparate codebases.
+  Hint: Datasource Location
+  Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/TODO-SOMETHING-ALSO-UNKNOWN"
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb" # This GUID keeps showing up in disparate codebases.
+    Hint: __Display name
+    Value: Unknown Mystery
