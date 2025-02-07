@@ -10,6 +10,11 @@
         "allowedPushOperations": "createUpdateAndDelete"
       },
       {
+        "name": "placeholdersettings",
+        "path": "/sitecore/Layout/Placeholder Settings/Project/myfirstsitecollection",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
         "name": "sitecollection",
         "path": "/sitecore/content/myfirstsitecollection",
         "scope": "singleItem",
