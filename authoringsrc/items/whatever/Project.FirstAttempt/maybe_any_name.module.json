@@ -8,6 +8,57 @@
         "name": "templates",
         "path": "/sitecore/templates/Project/myfirstsitecollection",
         "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "sitecollection",
+        "path": "/sitecore/content/myfirstsitecollection",
+        "scope": "singleItem",
+        "allowedPushOperations": "createAndUpdate"
+      },
+      {
+        "name": "doesntmatter",
+        "path": "/sitecore/content/myfirstsitecollection/myveryfirstscsite",
+        "rules": [
+          {
+            "path": "/home",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createOnly"
+          },
+          {
+            "path": "/Media",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createOnly"
+          },
+          {
+            "path": "/Data",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createOnly"
+          },
+          {
+            "path": "/Dictionary",
+            "scope": "itemAndChildren",
+            "allowedPushOperations": "createOnly"
+          },
+          {
+            "path": "/Presentation",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "/Settings/Site Grouping",
+            "scope": "itemAndDescendants",
+            "allowedPushOperations": "createOnly"
+          },
+          {
+            "path": "/Settings",
+            "scope": "itemAndChildren",
+            "allowedPushOperations": "createAndUpdate"
+          },
+          {
+            "path": "*",
+            "scope": "ignored"
+          }
+        ]
       }
     ]
   }
