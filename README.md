@@ -88,3 +88,27 @@ Also the depth-equivalent of [XM Cloud Intro's](https://github.com/Sitecore/XM-C
 * `1995806f-0a84-42b5-93b0-88f0e2ff872c` = magic GUID for `Path: /sitecore/layout/Renderings/Project`, I think, for use as `Parent: ` in your "Renderings" YAML files that have a `Path: "/sitecore/layout/Renderings/Project/thefileorfolderfoldernameorsomething"`
     * Also for those YAML, if folder:  `7ee0975b-0698-493e-b3a2-0b2ef33d0522` [normal Rendering Folder](https://github.com/mahen1105/XmCloudTest/blob/89fdf5750c479f2e1e5d0a79fba92ac992a7bc9b/src/items/templates/templates/System/Layout/Renderings/Rendering%20Folder.yml#L4) for use as `Template: `; * `840d4a46-5503-49ec-bf9d-bd090946c63d` [weird JSS-SXA Rendering Folder reimplementation](https://github.com/mahen1105/XmCloudTest/blob/89fdf5750c479f2e1e5d0a79fba92ac992a7bc9b/src/items/templates/templates/Foundation/JSS%20Experience%20Accelerator/Multisite/Folders/Rendering%20Folder.yml#L4) for use as `Template: ` _(Sugcon uses it)_
     * And if actual rendering, your YAML file's `Template: ` will be `04646a89-996f-4ee7-878a-ffdbf1f0ef0d` [Path: /sitecore/templates/Foundation/JavaScript Services/Json Rendering](https://github.com/mahen1105/XmCloudTest/blob/89fdf5750c479f2e1e5d0a79fba92ac992a7bc9b/src/items/templates/templates/Foundation/JavaScript%20Services/Json%20Rendering.yml#L4)
+
+
+---
+
+Ponder:  [knowing that](https://www.powershellgallery.com/packages/Sitecore.Pathfinder/0.11.0/Content/bin%5Cfiles%5Creferences%5CSitecore.Master.1.0.0.exports.xml) Sitecore did the following **item UUIDv3** hashings, can we figure out their namespacing algorithm?
+
+1. `00000000-0000-0000-0000-000000000000` -> (null)
+1. `11111111-1111-1111-1111-111111111111` -> `/sitecore`
+1. `EB2E4FFD-2761-4653-B052-26A64D385227` -> `/sitecore/layout`
+1  `1b59149d-7ed3-4d58-86a9-32eded8c0368` -> `/sitecore/layout/Placeholder Settings/Feature`
+1. `928a480f-8d07-4cc1-8b73-b46e20aabacc` -> `/sitecore/layout/Placeholder Settings/Foundation`
+1. `f5f0fbe3-61ad-4967-a5d8-8d760331d6a1` -> `/sitecore/layout/Placeholder Settings/Project`
+1. `3C1715FE-6A13-4FCF-845F-DE308BA9741D` -> `/sitecore/templates`
+1. `825b30b4-b40b-422e-9920-23a1b6bda89c` -> `/sitecore/templates/Project`
+1. `4BF98EF5-1D09-4DD1-9AFE-795F9829FD44` -> `/sitecore/templates/System`
+1. `633549D3-4B7D-40EB-B58F-EDA50BA5F7F0` -> `/sitecore/templates/System/Templates`
+1. `AB86861A-6030-46C5-B394-E8F99E8B87DB` -> `/sitecore/templates/System/Templates/Template`
+
+I want to stick to it when I generate my own for strings like:
+
+1. `/sitecore/layout/Placeholder Settings/Project/foo`
+1. `/sitecore/layout/Placeholder Settings/Project/foo/bar`
+1. `/sitecore/templates/Project/foo`
+1. `/sitecore/templates/Project/foo/bar`
