@@ -117,6 +117,19 @@ I want to stick to it when I generate my own for strings like:
 
 ---
 
+Some more values I don't want to lose track of:
+
+1. `1930BBEB-7805-471A-A3BE-4858AC7CF696` -> `/sitecore/templates/System/Templates/Standard template`
+1. `44a022db-56d3-419a-b43b-e27e4d8e9c41` -> `/sitecore/templates/Foundation/Experience Accelerator/StandardValues/_PerSiteStandardValues` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/Experience%20Accelerator/StandardValues/_PerSiteStandardValues.yml) is a data template)_
+1. `0437fee2-44c9-46a6-abe9-28858d9fee8c` -> `/sitecore/templates/System/Templates/Template Folder`
+1. `455A3E98-A627-4B40-8035-E683A0331AC7` -> `/sitecore/templates/System/Templates/Template field`
+1. `5D44F8DB-1F5C-40F5-9206-E6107E93CAE3` -> `/sitecore/templates/System/Templates/Template field/Data` ?
+1. `19a69332-a23e-4e70-8d16-b2640cb24cc8` -> `/sitecore/templates/System/Templates/Template field/Data/Title` ?
+
+---
+
+---
+
 A bit of a teaser for what I hope can become trying to show off what I know about the content modeling data model that comes out of the box with Sitecore, and how it translates to the way content authoring screens look and the way web sites end up looking.
 
 ---
@@ -161,3 +174,12 @@ Or, like, you could even spin up a short-lived 4th copy of the Sitecore CMS on y
 ---
 
 To be continued...
+
+---
+
+---
+
+* https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid.yml ID `908...` _(type:  data template with all of the "Standard Template" & "SXA Per-Site Standard Values" base template fields included)_
+    * Includes a `Headline` [__StandardValues.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/__Standard%20Values.yml)
+* https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer/Organizational%20Commitee.yml ID `043...` _(type:  PeopleGrid.yml)
+    * 
