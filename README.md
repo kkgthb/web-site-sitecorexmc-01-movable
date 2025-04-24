@@ -131,21 +131,6 @@ Some more values I don't want to lose track of:
 1. `1172f251-dad4-4efb-a329-0c63500e4f1e` -> `/sitecore/templates/System/Templates/Sections/Insert Options/Insert Options/__Masters`  _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Templates/Sections/Insert%20Options/Insert%20Options/__Masters.yml) is a template field)_
 1. `7ee0975b-0698-493e-b3a2-0b2ef33d0522` -> `/sitecore/templates/System/Layout/Renderings/Rendering Folder` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Layout/Renderings/Rendering%20Folder.yml) is a data template)_
 
-<!--
-<Template Id="{F5BC7AE4-F62D-47CD-9AFB-2C9F85D8313B}" Path="/sitecore/templates/System/Templates/Sections/Appearance" BaseTemplates="{00000000-0000-0000-0000-000000000000}">
-        <Section Id="{CD312499-F3D0-4AFC-B7BD-FD58AD20667B}" Name="Appearance">
-            <Field Id="{D3AE7222-425D-4B77-95D8-EE33AC2B6730}" Name="__Context Menu" Type="tree" />
-            <Field Id="{B5E02AD9-D56F-4C41-A065-A133DB87BDEB}" Name="__Display name" Sharing="Unversioned" />
-            <Field Id="{D85DB4EC-FF89-4F9C-9E7C-A9E0654797FC}" Name="__Editor" Type="server file" />
-            <Field Id="{A0CB3965-8884-4C7A-8815-B6B2E5CED162}" Name="__Editors" Type="TreelistEx" />
-            <Field Id="{39C4902E-9960-4469-AEEF-E878E9C8218F}" Name="__Hidden" Type="Checkbox" />
-            <Field Id="{06D5295C-ED2F-4A54-9BF2-26228D113318}" Name="__Icon" Type="Icon" />
-            <Field Id="{9C6106EA-7A5A-48E2-8CAD-F0F693B1E2D4}" Name="__Read Only" Type="Checkbox" />
-            <Field Id="{0C894AAB-962B-4A84-B923-CB24B05E60D2}" Name="__Ribbon" Type="tree" />
-            <Field Id="{079AFCFE-8ACA-4863-BDA7-07893541E2F5}" Name="__Skin" />
-            <Field Id="{BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}" Name="__Sortorder" />
--->
-
 ---
 
 ---
@@ -201,17 +186,19 @@ To be continued...
 
 ## Content items
 
+* [Eric Ramseur.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People/Organizer/Eric%20Ramseur.yml) ID `f8f...`
+    * _(type:  Person.yml (ID `cf5...`))_
 * [Organizational Committee.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer/Organizational%20Commitee.yml) ID `42c...`
     * _(type:  People Grid.yml the "template" (ID `908...`))_
     * _(Headline field value: `Organizational Commitee`)_
     * _(People field value: a list of a bunch of IDs including Eric's `f8f...`)_
 * [Organizers.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Home/Organizers.yml) ID `1c0...`
     * _(type:  Generic Page.yml `f5d...`)_
-    * _(___Final Renderings field value:  a list of a bunch of "renderings" references including one with a "Data Source" pointing to Organizational Committee.yml's `ID` of `42c...` and an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`)_
+    * _(Final Renderings field value:  a list of a bunch of "renderings" references including one with a "Data Source" pointing to Organizational Committee.yml's `ID` of `42c...` and an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`)_
 * [Organizer.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer.yml) ID `16b...`
     * _(type:  People Grid Folder.yml `3e6...`)_
     * _(parent:  People Grids.yml `971...`)_
-    * _(__Sortorder field value:  `100`)_
+    * _(Sortorder field value:  `100`)_
         * _(sibling `Speaker.yml` sort order is `300`, FWIW)_
 * [People Grids.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids.yml) ID `971...`
     * _(type:  People Grid Folder.yml `3e6...`)_
@@ -220,7 +207,7 @@ To be continued...
 
 * [People Grid Folder.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid%20Folder.yml), ID `3e6...`
     * _(type:  data template)_
-    * _(__Masters default field value:  a 2-item list pointing to the IDs of itself (`3e6...`) and of People Grid.yml the "template" (ID `908...`))_
+    * _(Masters default field value:  a 2-item list pointing to the IDs of itself (`3e6...`) and of People Grid.yml the "template" (ID `908...`))_
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid.yml) the "template," ID `908...`
     * _(type:  data template with all of the "Standard Template" & "SXA Per-Site Standard Values" base template (a universal Sitecore type) fields included, plus a [Headline.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/Headline.yml) field and a [People.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/People.yml) field)_
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/List%20Components/People%20Grid.yml) the "rendering," ID `533...`
