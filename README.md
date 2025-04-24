@@ -196,12 +196,13 @@ To be continued...
     * _(type:  People Grid Folder.yml `3e6...`)_
     * _(parent:  People Grids.yml `971...`)_
     * _(Sortorder field value:  `100`)_
-        * _(sibling `Speaker.yml` sort order is `300`, FWIW)_
+        * _(sibling `Speaker.yml` sort order is `300`, FWIW -- no idea if that's important or not -- keeping in mind the live website is from 2023, not 2024)_
 * [People Grids.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids.yml) ID `971...`
     * _(type:  People Grid Folder.yml `3e6...`)_
 * [Organizers.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Home/Organizers.yml) ID `1c0...`
     * _(type:  Generic Page.yml `f5d...`)_
-    * _(Final Renderings field value:  a list of a bunch of "renderings" references including one with a "Data Source" pointing to Organizational Committee.yml's `ID` of `42c...` and an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`)_
+    * _(Final Renderings field value:  a list of 3 of "renderings" references including one with a "Data Source" pointing to Organizational Committee.yml's `ID` of `42c...` and an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`.  The other two "renderings" references make sure that "Sitecore Coordination Team" shows up next, followed by "Volunteers.")_
+    * _(the HTML-generating code turns this into [https://na.sugcon.events/Organizers](https://na.sugcon.events/Organizers))_
 
 ## Definition items
 
