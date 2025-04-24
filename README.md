@@ -130,6 +130,10 @@ Some more values I don't want to lose track of:
 1. `1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f` -> `/sitecore/templates/System/Layout/Sections/Rendering Options/Editor Options/Datasource Template` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Layout/Sections/Rendering%20Options/Editor%20Options/Datasource%20Template.yml) is a template field)_
 1. `1172f251-dad4-4efb-a329-0c63500e4f1e` -> `/sitecore/templates/System/Templates/Sections/Insert Options/Insert Options/__Masters`  _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Templates/Sections/Insert%20Options/Insert%20Options/__Masters.yml) is a template field)_
 1. `7ee0975b-0698-493e-b3a2-0b2ef33d0522` -> `/sitecore/templates/System/Layout/Renderings/Rendering Folder` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Layout/Renderings/Rendering%20Folder.yml) is a data template)_
+1. `F5BC7AE4-F62D-47CD-9AFB-2C9F85D8313B` -> `/sitecore/templates/System/Templates/Sections/Appearance`
+1. `CD312499-F3D0-4AFC-B7BD-FD58AD20667B` -> `/sitecore/templates/System/Templates/Sections/Appearance` ?
+1. `B5E02AD9-D56F-4C41-A065-A133DB87BDEB` -> `/sitecore/templates/System/Templates/Sections/Appearance/__Display name` ?
+1. `BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E` -> `/sitecore/templates/System/Templates/Sections/Appearance/__Sortorder` ?
 
 ---
 
@@ -218,12 +222,12 @@ To be continued...
     * _(Masters default field value:  a 2-item list pointing to the IDs of itself (`3e6...`) and of People Grid.yml the "template" (ID `908...`))_
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid.yml) the "template," ID `908...`
     * _(type:  data template with all of the "Standard Template" & "SXA Per-Site Standard Values" base template (a universal Sitecore type) fields included, plus a [Headline.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/Headline.yml) field and a [People.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/People.yml) field)_
+* [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/mail/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/Rendering%20Parameters/People%20Grid.yml) the "rendering parameters," ID `b9e...`
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/List%20Components/People%20Grid.yml) the "rendering," ID `533...`
     * _(type:  SXA JSS JSON Rendering (a universal Sitecore type))_
     * _(parent:  List Components.yml `5df...`)_
     * _([Datasource Location](https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/use-a-query-to-determine-the-data-source-context.html) field value:  a query looking for "Data Item"-typed content items whose type/template is People Grid Folder.yml (ID `3e6...`))_
-    * _([Datasource Template](https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/data-sources.html) field value:  a reference to the `Path` value of the template-typed People Grid.yml (which, again, is ID `908...`))_
-        * _(Data sources docs [now-missing images](https://www.google.com/search?q=site:https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/data-sources&sca_esv=fc3cb5d2e645d47f&udm=2&filter=0&biw=1912&bih=920&dpr=1))_
+    * _([Datasource Template](https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/data-sources-1188183.html) field value:  a reference to the `Path` value of the template-typed People Grid.yml (ID `908...`))_
 * [List Components.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/List%20Components.yml) ID `5df...`
     * _(type:  renderings folder (a universal Sitecore type))_
 * [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/Page%20Templates/Generic%20Page.yml) ID `f5d...`
