@@ -221,7 +221,9 @@ To be continued...
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/List%20Components/People%20Grid.yml) the "rendering," ID `533...`
     * _(type:  SXA JSS JSON Rendering (a universal Sitecore type))_
     * _(parent:  List Components.yml `5df...`)_
-    * _(Datasource Template field value:  a reference to the `Path` value of the template-typed People Grid.yml (which, again, is ID `908...`))_
+    * _([Datasource Location](https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/use-a-query-to-determine-the-data-source-context.html) field value:  a query looking for "Data Item"-typed content items whose type/template is People Grid Folder.yml (ID `3e6...`))_
+    * _([Datasource Template](https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/data-sources.html) field value:  a reference to the `Path` value of the template-typed People Grid.yml (which, again, is ID `908...`))_
+        * _(Data sources docs [now-missing images](https://www.google.com/search?q=site:https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/data-sources&sca_esv=fc3cb5d2e645d47f&udm=2&filter=0&biw=1912&bih=920&dpr=1))_
 * [List Components.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/List%20Components.yml) ID `5df...`
     * _(type:  renderings folder (a universal Sitecore type))_
 * [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/Page%20Templates/Generic%20Page.yml) ID `f5d...`
