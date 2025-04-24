@@ -112,3 +112,52 @@ I want to stick to it when I generate my own for strings like:
 1. `/sitecore/layout/Placeholder Settings/Project/foo/bar`
 1. `/sitecore/templates/Project/foo`
 1. `/sitecore/templates/Project/foo/bar`
+
+---
+
+---
+
+A bit of a teaser for what I hope can become trying to show off what I know about the content modeling data model that comes out of the box with Sitecore, and how it translates to the way content authoring screens look and the way web sites end up looking.
+
+---
+
+Within the "Sitecore User Group Convention North America 2024" web site backup:
+
+The backup file called [Person.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/Basic%20Components/Person.yml "https://github.com/sitecore/xm-cloud-introduction/blob/main/authoring/items/sugcon2024/sugcon/sugcon/templates/sugcon2024/basic%20components/person.yml") is an instance of the concept of a "[definition item](https://helix.sitecore.com/principles/sitecore-items/item-types.html#definition-items "https://helix.sitecore.com/principles/sitecore-items/item-types.html#definition-items")" -- more specifically of one called a "[data template](https://doc.sitecore.com/xp/en/developers/latest/sitecore-experience-manager/data-templates-1158191.html "https://doc.sitecore.com/xp/en/developers/latest/sitecore-experience-manager/data-templates-1158191.html")" -- within the underlying Sitecore CMS database.  Note its `cf5...` value of its `ID` property in line 2.  *(We know it's a* `*data template*` *because the value of its* `*Template*` *property is* `*ab86861a-6030-46c5-b394-e8f99e8b87db*` *-- that's a universal one used by all Sitecore databases worldwide.  I did a quixotic amount of reverse-engineering other people's Sitecore backups scattered around GitHub last year.)*
+
+The backup file called [Eric Ramseur.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People/Organizer/Eric%20Ramseur.yml "https://github.com/sitecore/xm-cloud-introduction/blob/main/authoring/items/sugcon2024/sugcon/sugcon/sitena/na/data/people/organizer/eric%20ramseur.yml") is an instance of the concept of a "[content item](https://helix.sitecore.com/principles/sitecore-items/item-types.html#content-items "https://helix.sitecore.com/principles/sitecore-items/item-types.html#content-items")" within the underlying Sitecore CMS database.  Note that the `cf5...` value mentioned above is the value of its `Template` property in line 4.  This is how we know that within this particular Sitecore setup, `Eric Ramseur` is a `Person`.
+
+-   Interestingly, Eric's not inherently an "organizer" -- he's a "person" -- when it comes to what kinds of fields you need to fill out about him.  "Name," "JobRole," "Linkedin," etc.
+-   However, his data file backup is *stored* within a *folder* named `Organizer`.  How did the backup process from the Sitecore database know that it'd be a good idea to create a folder called `Organizer` and store `Eric Ramseur.yml` within it?  Well, take a look at the value of Eric's `Parent` property on line 3:  it starts with `c6e...`.  It turns out that `c6e...` is the value of `ID` in a [Organizer.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People/Organizer.yml "https://github.com/sitecore/xm-cloud-introduction/blob/main/authoring/items/sugcon2024/sugcon/sugcon/sitena/na/data/people/organizer.yml") backup file (line 2).
+
+The backup file called [Organizer.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People/Organizer.yml "https://github.com/sitecore/xm-cloud-introduction/blob/main/authoring/items/sugcon2024/sugcon/sugcon/sitena/na/data/people/organizer.yml") is also an instance of the concept of a "[definition item](https://helix.sitecore.com/principles/sitecore-items/item-types.html#definition-items "https://helix.sitecore.com/principles/sitecore-items/item-types.html#definition-items")" -- in this case, a custom one that the SugconNA2024 CMS administrators created -- within the underlying Sitecore CMS database.  *(We know it's custom-built because the value of its* `*Template*` *property is* `*bf4...*` *-- which is the* `*ID*` *of* [*Person Folder.yml*](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/Basic%20Components/Person%20Folder.yml "https://github.com/sitecore/xm-cloud-introduction/blob/main/authoring/items/sugcon2024/sugcon/sugcon/templates/sugcon2024/basic%20components/person%20folder.yml")*.)*
+
+The backup file called [Person Folder.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/Basic%20Components/Person%20Folder.yml "https://github.com/sitecore/xm-cloud-introduction/blob/main/authoring/items/sugcon2024/sugcon/sugcon/templates/sugcon2024/basic%20components/person%20folder.yml") is an instance of the concept of a "[definition item](https://helix.sitecore.com/principles/sitecore-items/item-types.html#definition-items "https://helix.sitecore.com/principles/sitecore-items/item-types.html#definition-items")" -- more specifically, again, a "data template" -- within the underlying Sitecore CMS database -- which again we know because because the value of Person Folder.yml's `Template` property is `ab86861a-6030-46c5-b394-e8f99e8b87db`.
+
+---
+
+Eventually, we'll take a look at how people like Eric Ramseur -- and details like `https://www.linkedin.com/in/ericramseur/` -- make it onto <https://na.sugcon.events/Organizers>.
+
+It's not just a matter of throwing `Eric Ramseur.yml` data straight into some HTML-producing code.  Nope!
+
+First, there're a lot more in-Sitecore-CMS-admin-portal configurations ("definition items") to learn about, that take care of wrapping data `Eric Ramseur.yml` data up in easier-for-frontend-devs-to-work-with / friendlier-for-content-authors-to-work-with enhanced data formats.
+
+Complexities like "[data templates](https://doc.sitecore.com/xp/en/developers/latest/sitecore-experience-manager/data-templates-1158191.html "https://doc.sitecore.com/xp/en/developers/latest/sitecore-experience-manager/data-templates-1158191.html")" whose fields include "Template Fields" (yet another "definition item" type) that hold "Multilist Query" (another "definition item" type) results.  And then even more "definition item" instances using "definition item" types like "Layout" & "Rendering" -- wrapping all of that!
+
+(I think his name and LinkedIn URL end up inside an "Organizers" JSON list inside a "People Grid" JSON object inside a "Grid" JSON object inside a "Dynamic Placeholder" JSON list inside a "Layout" JSON object inside **a "Page" JSON object that is what you** ***actually*** **fetch over Sitecore CMS's API**, or something intense like that.)
+
+Which seems like overkill for Eric, and possibly is.
+
+But it's a very useful way of wrapping & enhancing data before it goes out over the CMS's API toward HTML-producing code if you want to let authors move things around on the page with "[dynamic placeholders](https://www.switchit.com/blog/sitecore/sitecore-9-dynamic-placeholders.aspx "https://www.switchit.com/blog/sitecore/sitecore-9-dynamic-placeholders.aspx")."  ([Official docs](https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/sitecore-dynamic-placeholders-and-jss.html "https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/sitecore-dynamic-placeholders-and-jss.html") and their [now-missing photos](https://www.google.com/search?q=site:https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/sitecore-dynamic-placeholders-and-jss.html&sca_esv=1243c2b95c154fbe&udm=2&filter=0&biw=1912&bih=920&dpr=1 "https://www.google.com/search?q=site:https://doc.sitecore.com/xp/en/developers/hd/latest/sitecore-headless-development/sitecore-dynamic-placeholders-and-jss.html&sca_esv=1243c2b95c154fbe&udm=2&filter=0&biw=1912&bih=920&dpr=1").)  This is the magic that lets Sitecore CMS admins configure Sitecore so that *certain* content types can behave like Wix or Squarespace or Wordpress Block Editor / Gutenberg, where you as an author get to be like, "And now I'd like to drag one of these widgets here" -- but making it work even better than Squarespace, by making it easy for Sitecore CMS admins to configure Sitecore so that it's harder to mess up how Eric Ramseur shows up on the page (in his case, all an author gets to do is robotically data-enter his name, LinkedIn, etc.).
+
+As complex as this is, I'm now convinced Sitecore is the best data model I've seen in a CMS.  It really accommodates both "marketing" data structures that're very page-builder-ey, *and* real-world "semantic" data structures (like calendar events, humans, etc.) smoothly once you've gotten it all data-modeled and set up correctly in the CMS admin portal.
+
+---
+
+And the way that both configuration settings ("definition items") and content ("content items") can be easily backed up to version control repositories -- or loaded in from backups -- promises the ability to easily migrate configuration *or* content between environments (dev/stg/prd) via Git-based automations (CI/CD pipelines)!  (Whereas that's kinda hard in, say, Wix or Wordpress -- or even Sanity CMS, where the content items can be a pain to migrate.)
+
+Or, like, you could even spin up a short-lived 4th copy of the Sitecore CMS on your laptop and just noodle around in there for an afternoon dummy-checking a wild idea you just had without bothering anyone else.  But it could be fully spun up from the latest backup and be very production-like.  (Pretty sure Wix & Squarespace don't let you do *that*.  And I don't think it'd be fun to do in Wordpress.)
+
+---
+
+To be continued...
