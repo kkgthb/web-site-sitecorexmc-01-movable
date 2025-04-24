@@ -179,6 +179,9 @@ To be continued...
 
 ---
 
-* [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid.yml) ID `908...` _(type:  data template with all of the "Standard Template" & "SXA Per-Site Standard Values" base template fields included, plus a [Headline.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/Headline.yml) field set to `Organizational Commitee` and a [People.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/e340f7235a6e314c05bf95709cd8c236b0750a81/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/People.yml) field that lists a bunch of IDs including Eric's `f8f...`)_
-* [Organizational Committee.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer/Organizational%20Commitee.yml) ID `043...` _(type:  People Grid.yml)_
-    * 
+* [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid.yml) ID `908...`
+    * _(type:  data template with all of the "Standard Template" & "SXA Per-Site Standard Values" base template fields included, plus a [Headline.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/Headline.yml) field and a [People.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/People.yml) field)_
+* [Organizational Committee.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer/Organizational%20Commitee.yml) ID `043...`
+    * _(type:  People Grid.yml)_
+    * _(Headline field value: `Organizational Commitee`)_
+    * _(People field value: a list of a bunch of IDs including Eric's `f8f...`)_
