@@ -190,8 +190,12 @@ To be continued...
     * _(type:  Person.yml (ID `cf5...`))_
 * [Organizational Committee.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer/Organizational%20Commitee.yml) ID `42c...`
     * _(type:  People Grid.yml the "template" (ID `908...`))_
+    * _(parent:  Organizer.yml `16b...`)_
     * _(Headline field value: `Organizational Commitee`)_
     * _(People field value: a list of a bunch of IDs including Eric's `f8f...`)_
+    * Sibling similar content item backup files that also have the same `template` type and `parent` values:
+        * [Sitecore Coordination Team.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer/Sitecore%20Coordination%20Team.yml) ID `0de...`
+        * [Volunteers.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer/Volunteers.yml) `ID c95...`
 * [Organizer.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Data/People%20Grids/Organizer.yml) ID `16b...`
     * _(type:  People Grid Folder.yml `3e6...`)_
     * _(parent:  People Grids.yml `971...`)_
@@ -201,7 +205,10 @@ To be continued...
     * _(type:  People Grid Folder.yml `3e6...`)_
 * [Organizers.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Home/Organizers.yml) ID `1c0...`
     * _(type:  Generic Page.yml `f5d...`)_
-    * _(Final Renderings field value:  a list of 3 of "renderings" references including one with a "Data Source" pointing to Organizational Committee.yml's `ID` of `42c...` and an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`.  The other two "renderings" references make sure that "Sitecore Coordination Team" shows up next, followed by "Volunteers.")_
+    * _(Final Renderings field value:  a list of 3 of "renderings" references, each with an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`, and including a "Data Source" of:)_
+        * first:  Organizational Committee.yml's `ID` of `42c...`
+        * second:  Sitecore Coordination Team.yml's `ID` of `0de...`
+        * third:  Volunteers.yml's `ID` of `c95...`
     * _(the HTML-generating code turns this into [https://na.sugcon.events/Organizers](https://na.sugcon.events/Organizers))_
 
 ## Definition items
