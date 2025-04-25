@@ -97,7 +97,7 @@ Ponder:  [knowing that](https://www.powershellgallery.com/packages/Sitecore.Path
 1. `00000000-0000-0000-0000-000000000000` -> (null)
 1. `11111111-1111-1111-1111-111111111111` -> `/sitecore`
 1. `EB2E4FFD-2761-4653-B052-26A64D385227` -> `/sitecore/layout`
-1  `1b59149d-7ed3-4d58-86a9-32eded8c0368` -> `/sitecore/layout/Placeholder Settings/Feature`
+1.  `1b59149d-7ed3-4d58-86a9-32eded8c0368` -> `/sitecore/layout/Placeholder Settings/Feature`
 1. `928a480f-8d07-4cc1-8b73-b46e20aabacc` -> `/sitecore/layout/Placeholder Settings/Foundation`
 1. `f5f0fbe3-61ad-4967-a5d8-8d760331d6a1` -> `/sitecore/layout/Placeholder Settings/Project`
 1. `3C1715FE-6A13-4FCF-845F-DE308BA9741D` -> `/sitecore/templates`
