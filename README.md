@@ -258,7 +258,7 @@ To be continued...
     * _(under:  `SiteShared`)_
     * _(PartialDesigns field value:  a 3-item ordered list pointing to Header the partial design, Generic Page the partial design (ID `4a7`), and Footer the partial design)_
 * [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteShared/Shared/Presentation/Partial%20Designs/Generic%20Page.yml) the Partial Design (ID `4a7`)
-    * _(type:  SXA Presentation Page Design)_
+    * _(type:  SXA Presentation Partial Design)_
     * _(under:  `SiteShared`)_
     * _(Renderings field value:  an XML list of 2 "renderings" references)_:
         * first: 
