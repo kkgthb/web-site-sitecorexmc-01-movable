@@ -134,6 +134,10 @@ Some more values I don't want to lose track of:
 1. `CD312499-F3D0-4AFC-B7BD-FD58AD20667B` -> `/sitecore/templates/System/Templates/Sections/Appearance` ?
 1. `B5E02AD9-D56F-4C41-A065-A133DB87BDEB` -> `/sitecore/templates/System/Templates/Sections/Appearance/__Display name` ?
 1. `BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E` -> `/sitecore/templates/System/Templates/Sections/Appearance/__Sortorder` ?
+1. `1105b8f8-1e00-426b-bf1f-c840742d827b` -> `/sitecore/templates/Foundation/JSS Experience Accelerator/Presentation/Page Design` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/JSS%20Experience%20Accelerator/Presentation/Page%20Design.yml) is a data template)_
+1. `0966b999-0d0e-4278-acc9-9da69d461fe6` -> `/sitecore/templates/Foundation/Experience Accelerator/Presentation/Base/_Base Page Design/Designing/PartialDesigns` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/Experience%20Accelerator/Presentation/Base/_Base%20Page%20Design/Designing/PartialDesigns.yml) is a template field)_
+1. `fd2059fd-6043-4dfe-8c04-e2437ce87634` -> `/sitecore/templates/Foundation/JSS Experience Accelerator/Presentation/Partial Design` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/JSS%20Experience%20Accelerator/Presentation/Partial%20Design.yml) is a data template)_
+1. `f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e` -> `/sitecore/templates/System/Templates/Sections/Layout/Layout/__Renderings`_([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Templates/Sections/Layout/Layout/__Renderings.yml) is a template field)_
 
 ---
 
@@ -209,10 +213,13 @@ To be continued...
     * _(type:  People Grid Folder.yml `3e6...`)_
 * [Organizers.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteNA/NA/Home/Organizers.yml) ID `1c0...`
     * _(type:  Generic Page.yml `f5d...`)_
-    * _(Final Renderings field value:  a list of 3 of "renderings" references, each with an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`, and including a "Data Source" of:)_
+    * _(Final Renderings field value:  an XML list of 3 "renderings" references, each with an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`, all assigned to be injected into whichever presentational component has the path `/headless-main/sxa-generic-page/container-2`, and including a "Data Source" of:)_
         * first:  Organizational Committee.yml's `ID` of `42c...`
+            * _(final path suffix `-1`)_
         * second:  Sitecore Coordination Team.yml's `ID` of `0de...`
+            * _(final path suffix `-2`)_
         * third:  Volunteers.yml's `ID` of `c95...`
+            * _(final path suffix `-3`)_
     * _(the HTML-generating code turns this into [https://na.sugcon.events/Organizers](https://na.sugcon.events/Organizers))_
 
 ## Definition items
@@ -234,3 +241,38 @@ To be continued...
     * _(type:  renderings folder (a universal Sitecore type))_
 * [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/Page%20Templates/Generic%20Page.yml) ID `f5d...`
     * _(type:  data template)_
+
+
+
+
+
+
+---
+
+---
+
+* [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteShared/Shared/Presentation/Page%20Designs/GenericPage.yml) the [Page Design](https://doc.sitecore.com/xmc/en/developers/xm-cloud/create-and-assign-a-page-design-in-the-content-editor.html) (ID `ae6`)
+    * _(type:  SXA Presentation Page Design)_
+    * _(under:  `SiteShared`)_
+    * _(PartialDesigns field value:  a 3-item ordered list pointing to Header, Generic Page the partial design (ID `4a7`), and Footer)_
+* [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteShared/Shared/Presentation/Partial%20Designs/Generic%20Page.yml) the Partial Design (ID `4a7`)
+    * _(type:  SXA Presentation Page Design)_
+    * _(under:  `SiteShared`)_
+    * _(Renderings field value:  an XML list of 2 "renderings" references)_:
+        * first: 
+            * a "rendering," ID `e8a...`, called [Page Title](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/Structure/PageTitle.yml) the "rendering" (ID `e8a...`)
+                * _(type:  SXA JSS JSON Rendering (a universal Sitecore type))_
+                * Component Query field value:  TODO
+                * _([Datasource Location](https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/use-a-query-to-determine-the-data-source-context.html) field value:  TODO)_
+                * _([Datasource Template](https://doc.sitecore.com/xp/en/developers/sxa/latest/sitecore-experience-accelerator/data-sources-1188183.html) field value:  TODO)_
+                * _(Parameters Template field value:  TODO)_
+            * _(no "Data Source")_
+            * assigned to be injected into _(or to become??)_ whichever presentational component has the path `/headless-main`, with a suffix of `-1` at the very end of its final path
+        * second: 
+            * a "rendering," ID `7a1...`, suspected to be SXA's / Sitecore's "Section" or "Component" (ID `7a1...`)
+            * _(no "Data Source")_
+            * assigned to be injected into _(or to become??)_ whichever presentational component has the path `/headless-main`, with a suffix of `-2` at the very end of its final path
+
+
+
+[Page Title](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/Structure/PageTitle.yml) the "rendering (ID `e8a...`)
