@@ -137,7 +137,9 @@ Some more values I don't want to lose track of:
 1. `1105b8f8-1e00-426b-bf1f-c840742d827b` -> `/sitecore/templates/Foundation/JSS Experience Accelerator/Presentation/Page Design` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/JSS%20Experience%20Accelerator/Presentation/Page%20Design.yml) is a data template)_
 1. `0966b999-0d0e-4278-acc9-9da69d461fe6` -> `/sitecore/templates/Foundation/Experience Accelerator/Presentation/Base/_Base Page Design/Designing/PartialDesigns` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/Experience%20Accelerator/Presentation/Base/_Base%20Page%20Design/Designing/PartialDesigns.yml) is a template field)_
 1. `fd2059fd-6043-4dfe-8c04-e2437ce87634` -> `/sitecore/templates/Foundation/JSS Experience Accelerator/Presentation/Partial Design` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/JSS%20Experience%20Accelerator/Presentation/Partial%20Design.yml) is a data template)_
-1. `f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e` -> `/sitecore/templates/System/Templates/Sections/Layout/Layout/__Renderings`_([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Templates/Sections/Layout/Layout/__Renderings.yml) is a template field)_
+1. `f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e` -> `/sitecore/templates/System/Templates/Sections/Layout/Layout/__Renderings` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Templates/Sections/Layout/Layout/__Renderings.yml) is a template field)_
+1. `d2a6884c-04d5-4089-a64e-d27ca9d68d4c` -> `/sitecore/templates/Foundation/JSS Experience Accelerator/Placeholder Settings/Placeholder`  _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/JSS%20Experience%20Accelerator/Placeholder%20Settings/Placeholder.yml) is a data template)_
+1. `7256bdab-1fd2-49dd-b205-cb4873d2917c` -> `/sitecore/templates/System/Layout/Placeholder/Data/Placeholder Key` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Layout/Placeholder/Data/Placeholder%20Key.yml) is a template field)_
 
 ---
 
@@ -254,7 +256,7 @@ To be continued...
 * [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteShared/Shared/Presentation/Page%20Designs/GenericPage.yml) the [Page Design](https://doc.sitecore.com/xmc/en/developers/xm-cloud/create-and-assign-a-page-design-in-the-content-editor.html) (ID `ae6`)
     * _(type:  SXA Presentation Page Design)_
     * _(under:  `SiteShared`)_
-    * _(PartialDesigns field value:  a 3-item ordered list pointing to Header, Generic Page the partial design (ID `4a7`), and Footer)_
+    * _(PartialDesigns field value:  a 3-item ordered list pointing to Header the partial design, Generic Page the partial design (ID `4a7`), and Footer the partial design)_
 * [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteShared/Shared/Presentation/Partial%20Designs/Generic%20Page.yml) the Partial Design (ID `4a7`)
     * _(type:  SXA Presentation Page Design)_
     * _(under:  `SiteShared`)_
@@ -272,7 +274,8 @@ To be continued...
             * a "rendering," ID `7a1...`, suspected to be SXA's / Sitecore's "Section" or "Component" (ID `7a1...`)
             * _(no "Data Source")_
             * assigned to be injected into _(or to become??)_ whichever presentational component has the path `/headless-main`, with a suffix of `-2` at the very end of its final path
-
-
-
-[Page Title](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/Structure/PageTitle.yml) the "rendering (ID `e8a...`)
+* [Generic Page.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/SiteShared/Shared/Presentation/Page%20Designs/GenericPage.yml) the Placeholder (ID `2f0`)
+    * _(type:  SXA Presentation Placeholder Settings Placeholder)_
+    * _(under:  `SiteShared`)_
+    * _(Placeholder Key field value:  `sxa-generic-page`)_
+        * _(Note:  this file seems to only exist to please validation tools that expect non-root+non-leaf/middle/major placeholders that show up by name to have explicit "placeholder settings" files, even if they are otherwise empty of configuration field values, such as perhaps an "Allowed Controls" field listing the allowed "rendering" UUIDs separated by `|`.  Here, it's more just a "yes, we meant to name this `s:ph` value `.../sxa-generic-page/...` elsewhere in the codebase; that's not a typo" definition item for the sake of clarity to humans and to validation tools.)_
