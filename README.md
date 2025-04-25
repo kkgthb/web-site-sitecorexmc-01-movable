@@ -218,6 +218,7 @@ To be continued...
     * _(Final Renderings field value:  an XML list of 3 "renderings" references, each with an "ID" pointing to the rendering-typed People Grid.yml's ID `533...`, all assigned to be injected into whichever presentational component has the path `/headless-main/sxa-generic-page/container-2`, and including a "Data Source" of:)_
         * first:  Organizational Committee.yml's `ID` of `42c...`
             * _(final path suffix `-1`)_
+            * _(Remember that `Organizational Committee.yml` is of template type `908...`, which has a `People` field that can be filled with data items of Person.yml type `cf5`, and indeed does have a reference to Eric's ID, and Eric is a Person -- ta-da!)_
         * second:  Sitecore Coordination Team.yml's `ID` of `0de...`
             * _(final path suffix `-2`)_
         * third:  Volunteers.yml's `ID` of `c95...`
@@ -230,7 +231,7 @@ To be continued...
     * _(type:  data template)_
     * _(Masters default field value:  a 2-item list pointing to the IDs of itself (`3e6...`) and of People Grid.yml the "template" (ID `908...`))_
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid.yml) the "template," ID `908...`
-    * _(type:  data template with all of the "Standard Template" & "SXA Per-Site Standard Values" base template (a universal Sitecore type) fields included, plus a [Headline.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/Headline.yml) field and a [People.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/People.yml) field)_
+    * _(type:  data template with all of the "Standard Template" & "SXA Per-Site Standard Values" base template (a universal Sitecore type) fields included, plus a [Headline.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/Headline.yml) field and a [People.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/People%20Grid/Content/People.yml) field (ID:  `1eb...`; Source field value:  a query making available all content items with template type Person.yml (ID:  `cf5...`)))_
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/mail/authoring/items/Sugcon2024/Sugcon/Sugcon/Templates/Sugcon2024/List%20Components/Rendering%20Parameters/People%20Grid.yml) the "rendering parameters," ID `b9e...`
     * _(type:  data template with all of the "SXA JSS Base Rendering Parameters" + "Dynamic Placeholder" + "SXA Per-Site Standard Values" + "Rendering ID" (4 universal Sitecore types) base templates' fields included)_
 * [People Grid.yml](https://github.com/Sitecore/XM-Cloud-Introduction/blob/main/authoring/items/Sugcon2024/Sugcon/Sugcon/Renderings/Sugcon2024/List%20Components/People%20Grid.yml) the "rendering," ID `533...`
