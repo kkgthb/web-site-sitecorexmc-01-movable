@@ -309,5 +309,3 @@ $fresh_guid | Set-Clipboard
 Write-Host "Fresh UUID v5 is: $fresh_guid and is now on your clipboard." -ForegroundColor 'Green'
 Write-Host $fresh_guid
 ```
-
-https://www.uuidtools.com/api/generate/v5/namespace/825b30b4-b40b-422e-9920-23a1b6bda89c/name/base64:bXlmaXJzdHNpdGVjb2xsZWN0aW9u
