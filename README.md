@@ -280,3 +280,34 @@ To be continued...
     * _(under:  `SiteShared`)_
     * _(Placeholder Key field value:  `sxa-generic-page`)_
         * _(Note:  this file seems to only exist to please validation tools that expect non-root+non-leaf/middle/major placeholders that show up by name to have explicit "placeholder settings" files, even if they are otherwise empty of configuration field values, such as perhaps an "Allowed Controls" field listing the allowed "rendering" UUIDs separated by `|`.  Here, it's more just a "yes, we meant to name this `s:ph` value `.../sxa-generic-page/...` elsewhere in the codebase; that's not a typo" definition item for the sake of clarity to humans and to validation tools.)_
+
+---
+
+5/22/2026:
+
+Handy REST API call:
+
+```powershell
+$parent_uuidv5_namespace = Read-Host -Prompt "Enter the parent namespace UUID (v5)"
+$parent_uuidv5_doublechecker = [System.Guid]$parent_uuidv5_namespace
+# Use [System.Guid]::TryParse to safely check if the string casts without throwing an error
+While ($parent_uuidv5_namespace -ne [String]$parent_uuidv5_doublechecker) {
+    Write-Host "Invalid UUID format. Please try again." -ForegroundColor 'Red'
+    $parent_uuidv5_namespace = Read-Host -Prompt "Enter the parent namespace UUID (v5)"
+    $parent_uuidv5_doublechecker = [System.Guid]$parent_uuidv5_namespace
+}
+Write-Host "Using parent UUIDv5: $parent_uuidv5_namespace" -ForegroundColor 'Cyan'
+$fresh_name = Read-Host -Prompt "Enter the fresh name to append to it"
+While (-not $fresh_name) {
+    Write-Host "Name may not be blank.  Please try again." -ForegroundColor 'Red'
+    $fresh_name = Read-Host -Prompt "Enter the fresh name to append to it"
+}
+Write-Host "Using fresh name: $fresh_name" -ForegroundColor 'Cyan'
+$fresh_name_base64 = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($fresh_name));
+$fresh_guid = (Invoke-RestMethod "https://www.uuidtools.com/api/generate/v5/namespace/$parent_uuidv5_namespace/name/base64:$fresh_name_base64")
+$fresh_guid | Set-Clipboard
+Write-Host "Fresh UUID v5 is: $fresh_guid and is now on your clipboard." -ForegroundColor 'Green'
+Write-Host $fresh_guid
+```
+
+https://www.uuidtools.com/api/generate/v5/namespace/825b30b4-b40b-422e-9920-23a1b6bda89c/name/base64:bXlmaXJzdHNpdGVjb2xsZWN0aW9u
