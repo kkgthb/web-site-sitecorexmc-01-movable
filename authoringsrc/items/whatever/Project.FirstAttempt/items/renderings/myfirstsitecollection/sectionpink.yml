@@ -1,7 +1,7 @@
 ---
 ID: "b4b1c02f-7ac8-5fd3-82b6-267c89858620" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 079808db... with "sectionpink"
 Parent: "079808db-5ef7-54f8-bd2e-93dd16c1f672" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/renderings/myfirstsitecollection.yml file's ID
-Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d" # This value means "/sitecore/templates/Foundation/JavaScript Services/Json Rendering"
 Path: /sitecore/layout/Renderings/Project/myfirstsitecollection/sectionpink
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0" # This GUID keeps showing up in disparate codebases.
@@ -14,8 +14,8 @@ SharedFields:
   Hint: Datasource Template
   Value: /sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016" # This GUID keeps showing up in disparate codebases.
-  Hint: Datasource Location
-  Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/TODO-SOMETHING-ALSO-PINK-BUT-IT-ALSO-NEEDS-TO-LINK-TO-MY-TODO-SOMETHING-PINK-TEMPLATE-AND-MAYBE-ALSO-NEEDS-TO-LINK-TO-THE-GUID-FOR-SYSTEM-FOLDER-TEMPLATE-TYPE-BUT-NOT-SURE-WHY-OH-AND-ALSO-MAYBE-ITS-SOMEHOW-JUST-CONTENT-OF-TYPE-FOLDER" # https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/content/jss-nextjs-storybook/Components/ContentBlock.yml
+  Hint: Datasource Location # 5/22/26 LLM says:  This should be a pipe-delimited list of all "content tree" folders capable of containing "datasource" items for editors to pick / create.  It just needs to be a path string, and does not need to carry any template info.  LLM says a "JSON Rendering" delegates all "which template?" logic to the pointed-to "folder" item's "__Masters" property.
+  Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/sectionpink" # Someone else's example:  https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/content/jss-nextjs-storybook/Components/ContentBlock.yml
 Languages:
 - Language: en
   Fields:
