@@ -1,6 +1,6 @@
 ---
-ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/somecomponents/components.yml file's ID
+ID: "c3bbd1a3-3051-5bd8-9751-3250045ba9d3" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate c1833d1e... with "sectionpink"
+Parent: "c1833d1e-2750-5fcd-b524-d578de48df0c" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/somecomponents/components.yml file's ID
 Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523" # This value means "Folder" components are folders, for whatever reason.
 Path: /sitecore/content/myfirstsitecollection/components/sectionpink
 SharedFields:

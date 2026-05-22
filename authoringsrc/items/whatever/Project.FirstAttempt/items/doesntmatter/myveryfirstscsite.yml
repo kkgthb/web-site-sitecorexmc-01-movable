@@ -1,6 +1,6 @@
 ---
-ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/sitecollection/myfirstsitecollection.yml file's ID
+ID: "7bec757b-0908-5bb8-afe8-80d13a01f8a3" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 2db45423... with "myveryfirstscsite"
+Parent: "2db45423-15db-5a45-8571-29c101a77256" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/sitecollection/myfirstsitecollection.yml file's ID
 Template: "" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection/Headless Site.yml file's ID
 Path: /sitecore/content/myfirstsitecollection/myveryfirstscsite
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e" # This GUID keeps showing up in disparate codebases.
