@@ -1,6 +1,6 @@
 ---
-ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection.yml file's ID
+ID: "6dc02572-b30a-5ef3-8e2e-c9f43860e615" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 51adf9f3... with "Headless Site"
+Parent: "51adf9f3-42ea-5493-85a5-0b4fd61e1777" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection.yml file's ID
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db" # This value means "Template."  I probably still need a "Headless Site" folder with a "__Standard Values.yml" file in it, though.
 Path: /sitecore/templates/Project/myfirstsitecollection/Headless Site
 SharedFields:
