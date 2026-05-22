@@ -7,7 +7,7 @@ BranchID: "2d3805b9-3089-44f3-b952-d45c44add7f8" # This GUID keeps showing up in
 SharedFields:
 - ID: "102b58da-2a86-4953-b3cd-c9f91256b657" # This GUID keeps showing up in disparate codebases, even though I can't find it on Google.  It must be built into Sitecore or SXA and have someting to do with defining the scope of a "site."
   Hint: PlaceholderSettingsFolder
-  Value: "{TODO_CREATE_FILE_WITH_THIS_ID}"
+  Value: "{31541ad7-052f-5e19-85d5-75402868627d}" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/layout/Placeholder Settings/Project/myfirstsitecollection"
 - ID: "1230d2cb-4948-4d43-8a3b-b39978f6f1b3" # This GUID, and the included GUID values for it, keep showing up in disparate codebases.  Again, probably something SXA-related.  Some codebases have even more values, but this is the overlap.  Per https://www.sc-graphql-cookbook.dev/snippet/search---orderby, the included values are things like "SiteMetadata Site Collection Setup" and "Headless Navigation Site Collection Setup" ([http://localhost/en]/sitecore/system/Settings/Feature/JSS-Experience-Accelerator/Navigation/Headless-Navigation-Site-Collection-Setup)
   Hint: Modules
   Value: |
@@ -25,10 +25,10 @@ SharedFields:
   Value: "{TODO_CREATE_FILE_WITH_THIS_ID}"
 - ID: "853b245f-53e4-4ebe-bab5-299f9de314b6" # This GUID keeps showing up in disparate codebases.
   Hint: RenderingsFolder
-  Value: "{TODO_CREATE_FILE_WITH_THIS_ID}"
+  Value: "{079808db-5ef7-54f8-bd2e-93dd16c1f672}" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/layout/Renderings/Project/myfirstsitecollection"
 - ID: "9c596379-f8d4-45d1-a064-cdf1ede2e7c7" # This GUID keeps showing up in disparate codebases.
   Hint: Templates
-  Value: "{TODO_CREATE_FILE_WITH_THIS_ID}"
+  Value: "{51adf9f3-42ea-5493-85a5-0b4fd61e1777}" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/templates/Project/myfirstsitecollection"
 - ID: "e90a4413-c111-4951-9b6a-00c4ce7fb289" # This GUID keeps showing up in disparate codebases.
   Hint: MediaLibrary
   Value: "{TODO_CREATE_FILE_WITH_THIS_ID}"
