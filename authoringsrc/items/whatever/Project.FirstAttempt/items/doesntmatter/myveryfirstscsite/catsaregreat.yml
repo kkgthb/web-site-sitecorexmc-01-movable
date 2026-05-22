@@ -1,0 +1,2 @@
+# TODO.  This thing's `Template` should be an instance of a "Routable Page" page template, I guess.
+# Right now, the data architecture is simple, so ... let's just say that its "landing" should contain 2 "pink section" instances, back to back.
