@@ -1,2 +1,25 @@
 # TODO.  This thing's `Template` should be an instance of a "Routable Page" page template, I guess.
 # Right now, the data architecture is simple, so ... let's just say that its "landing" should contain 1 "pink section" instance.
+---
+ID: "31eb055f-22b3-5761-a193-c07243312e7c" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 7bec757b... with "home"
+Parent: "7bec757b-0908-5bb8-afe8-80d13a01f8a3" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/doesntmatter/myveryfirstscsite.yml file's ID
+Template: "05fc59fd-8b69-5678-98f7-3f531d2de1f5" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/templates/Project/myfirstsitecollection/My Page Flavors/routablepage"
+Path: /sitecore/content/myfirstsitecollection/myveryfirstscsite/home
+# SharedFields:
+# - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b89b5a3ad" # __Renderings -- the layout/rendering assignments for this page
+#   Hint: __Renderings
+#   Value: >
+#     <r xmlns:p="p" xmlns:s="s" p:p="1">
+#       <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+#         <r uid="{TODO-RANDOM-UUID-NOT-V5-JUST-ANY-UUID-1}"
+#            s:id="{B4B1C02F-7AC8-5FD3-82B6-267C89858620}"
+#            s:ph="landing"
+#            s:ds="{TODO-GUID-OF-A-SECTIONPINK-DATASOURCE-CONTENT-ITEM}" />
+#       </d>
+#     </r>
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb" # This GUID keeps showing up in disparate codebases.
+    Hint: __Display name
+    Value: Home
