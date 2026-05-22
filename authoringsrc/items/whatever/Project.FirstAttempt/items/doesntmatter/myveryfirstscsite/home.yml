@@ -1,5 +1,3 @@
-# TODO.  This thing's `Template` should be an instance of a "Routable Page" page template, I guess.
-# Right now, the data architecture is simple, so ... let's just say that its "landing" should contain 1 "pink section" instance.
 ---
 ID: "31eb055f-22b3-5761-a193-c07243312e7c" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 7bec757b... with "home"
 Parent: "7bec757b-0908-5bb8-afe8-80d13a01f8a3" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/doesntmatter/myveryfirstscsite.yml file's ID
@@ -23,3 +21,5 @@ Languages:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb" # This GUID keeps showing up in disparate codebases.
     Hint: __Display name
     Value: Home
+# TODO.  This thing's `Template` should be an instance of a "Routable Page" page template, I guess.
+# Right now, the data architecture is simple, so ... let's just say that its "landing" should contain 1 "pink section" instance.
