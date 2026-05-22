@@ -1,0 +1,5 @@
+---
+ID: "563f8c97-75cf-561c-bb69-74297f53e45b" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 51adf9f3... with "My Page Flavors"
+Parent: "51adf9f3-42ea-5493-85a5-0b4fd61e1777" # templates/myfirstsitecollection.yml
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c" # This value means "Template Folder" -- as in, there's a "myfirstsitecollection" folder alongside this YAML file with YAML files inside of it that are typed as Template Folder, Template, etc.
+Path: /sitecore/templates/Project/myfirstsitecollection/My Page Flavors
