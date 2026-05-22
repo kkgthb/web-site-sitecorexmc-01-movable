@@ -1,6 +1,6 @@
 ---
-ID: "" # I get to make this value up myself
-Parent: "" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/renderings/myfirstsitecollection.yml file's ID
+ID: "b4b1c02f-7ac8-5fd3-82b6-267c89858620" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 079808db... with "sectionpink"
+Parent: "079808db-5ef7-54f8-bd2e-93dd16c1f672" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/renderings/myfirstsitecollection.yml file's ID
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
 Path: /sitecore/layout/Renderings/Project/myfirstsitecollection/sectionpink
 SharedFields:
