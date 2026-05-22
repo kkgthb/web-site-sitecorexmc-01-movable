@@ -2,7 +2,7 @@
 ID: "05fc59fd-8b69-5678-98f7-3f531d2de1f5" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate 563f8c97... with "routablepage"
 Parent: "563f8c97-75cf-561c-bb69-74297f53e45b" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection/My Page Flavors.yml file's ID
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db" # This value means "Template."  I probably still need a "routablepage" folder with a "__Standard Values.yml" file in it, though.
-Path: /sitecore/templates/Project/myfirstsitecollection/My Components/routablepage
+Path: "/sitecore/templates/Project/myfirstsitecollection/My Page Flavors/routablepage"
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318" # This GUID keeps showing up in disparate codebases.
   Hint: __Icon
