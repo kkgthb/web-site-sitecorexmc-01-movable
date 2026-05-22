@@ -1,0 +1,6 @@
+# TODO-later: add in a "say" field with "standard values"
+# ---
+# ID: "d56c1767-d59c-5292-96da-317f50a9b2fe" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate e3a3ff94... with "Data"
+# Parent: "e3a3ff94-258a-5017-ace5-7f4e813f623b" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection/My Components/sectionpink.yml file's ID
+# Template: "e269fbb5-3750-427a-9149-7aa950b49301" # This value means "Template Section" (a named grouping of fields within a "Template").
+# Path: "/sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink/Data"

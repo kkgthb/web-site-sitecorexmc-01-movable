@@ -8,6 +8,10 @@ SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318" # This GUID keeps showing up in disparate codebases.
   Hint: __Icon
   Value: Office/16x16/document_tag.png # TODO:  CHANGE THIS TO SOMETHING PINKER
+# TODO-later: add in a "say" field with "standard values"
+# - ID: "f7d48a55-2158-4f02-9356-756654404f73" # This GUID keeps showing up in disparate codebases.
+#   Hint: __Standard Values
+#   Value: "{ebe662d1-a9b5-5754-9683-96bab4cce5eb}" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink/__Standard Values"
 Languages:
 - Language: en
   Fields:

@@ -1,0 +1,22 @@
+# TODO-later: add in a "say" field with "standard values"
+# ---
+# ID: "976e7cb2-1a7e-5f1a-8406-717af6dc5497" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate d56c1767... with "say"
+# Parent: "d56c1767-d59c-5292-96da-317f50a9b2fe" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection/My Components/sectionpink/Data.yml file's ID
+# Template: "455a3e98-a627-4b40-8035-e683a0331ac7" # This value means "Template Field"
+# Path: "/sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink/Data/say"
+# SharedFields:
+# - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32" # This GUID keeps showing up in disparate codebases.
+#   Hint: "Type"
+#   Value: "Single-Line Text"
+# Languages:
+# - Language: en
+#   Fields:
+#   - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8" # This GUID keeps showing up in disparate codebases.
+#     Hint: "Say"
+#     Value: "Say"
+#   - ID: "577f1689-7de4-4ad2-a15f-7fdc1759285f" # This GUID keeps showing up in disparate codebases.
+#     Hint: "__Long description"
+#     Value: "Put something here that this section should say."
+#   - ID: "9541e67d-ce8c-4225-803d-33f7f29f09ef" # This GUID keeps showing up in disparate codebases.
+#     Hint: "__Short description"
+#     Value: "Please enter something to say."

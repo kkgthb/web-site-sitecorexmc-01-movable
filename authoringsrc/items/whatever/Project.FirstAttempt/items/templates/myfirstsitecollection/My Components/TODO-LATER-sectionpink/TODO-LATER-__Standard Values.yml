@@ -1,0 +1,12 @@
+# TODO-later: add in a "say" field with "standard values"
+# ---
+# ID: "ebe662d1-a9b5-5754-9683-96bab4cce5eb" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate e3a3ff94... with "__Standard Values"
+# Parent: "e3a3ff94-258a-5017-ace5-7f4e813f623b" # I need to refer to .authoringsrc/items/whatever/Project.FirstAttempt/items/templates/myfirstsitecollection/My Components/sectionpink.yml file's ID
+# Template: "e3a3ff94-258a-5017-ace5-7f4e813f623b" # LLM 5/22/26:  __Standard Values items are typed as the template they belong to.
+# Path: "/sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink/__Standard Values"
+# Languages:
+# - Language: "en"
+#   Fields:
+#   - ID: "976e7cb2-1a7e-5f1a-8406-717af6dc5497" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink/Data/say"
+#     Hint: "What you would like this section to say"
+#     Value: "I am the default pink section starter value"
