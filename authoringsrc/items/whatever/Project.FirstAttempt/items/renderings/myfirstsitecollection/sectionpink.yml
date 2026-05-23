@@ -14,7 +14,7 @@ SharedFields:
   Hint: Datasource Template
   Value: /sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016" # This GUID keeps showing up in disparate codebases.
-  Hint: Datasource Location # 5/22/26 LLM says:  This should be a pipe-delimited list of all "content tree" folders capable of containing "datasource" items for editors to pick / create.  It just needs to be a path string, and does not need to carry any template info.  LLM says a "JSON Rendering" delegates all "which template?" logic to the pointed-to "folder" item's "__Masters" property.
+  Hint: Datasource Location # 5/22/26 LLM says:  This should be a pipe-delimited list of all "content tree" folders capable of containing "datasource" items for editors to pick / create.  It just needs to be a path string, and does not need to carry any template info.  LLM says a "JSON Rendering" delegates all "which template?" logic to the pointed-to "folder" item's "__Masters" property.  LLM also points out that if I decide I would rather store items that are instances of `e3a3ff94...` alongside the routetable-typed page items that intend to render them, I'll need to change this value to something like `./` _(relative to the page)_, for Experience Editor and content authoring portals _(this is where the "Browser" dialog opens when an author clicks to pick or create a datasource)_.
   Value: "./Page Components|/sitecore/content/myfirstsitecollection/Components/sectionpink" # Someone else's example:  https://github.com/jflheureux/jss-nextjs-storybook/blob/5db1d3a9138d7f566c5fda7cd1ce9f715ebec359/src/items/content/jss-nextjs-storybook/Components/ContentBlock.yml
 Languages:
 - Language: en

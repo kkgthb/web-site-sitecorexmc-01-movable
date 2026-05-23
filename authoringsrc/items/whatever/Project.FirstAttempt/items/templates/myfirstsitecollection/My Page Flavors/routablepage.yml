@@ -4,6 +4,19 @@ Parent: "563f8c97-75cf-561c-bb69-74297f53e45b" # I need to refer to .authoringsr
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db" # This value means "Template."  I probably still need a "routablepage" folder with a "__Standard Values.yml" file in it, though.
 Path: "/sitecore/templates/Project/myfirstsitecollection/My Page Flavors/routablepage"
 SharedFields:
+# - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116" # This whole entry -- its ID, Hint, and Value -- keep showing up in disparate codebases, so it must just be something I need to include.  This GUID seems to be Sitecore-standard and mean the "__Base template" field within a "Template" (ab86861a).
+#   Hint: __Base template
+#   # _(Thank you, https://github.com/mahen1105/XmCloudTest, as always.)_
+#   # 47151711-26CA-434E-8132-D3E0B7D26683 is `/sitecore/templates/Foundation/JSS Experience Accelerator/Multisite/Base Page`
+#   # 371D5FBB-5498-4D94-AB2B-E3B70EEBE78C `/sitecore/templates/Foundation/Experience Accelerator/Navigation/_Navigable`
+#   # 4414A1F9-826A-4647-8DF4-ED6A95E64C43 is `/sitecore/templates/Foundation/Experience Accelerator/SiteMetadata/Sitemap/_Sitemap`
+#   # F39A594A-7BC9-4DB0-BAA1-88543409C1F9 is `/sitecore/templates/Foundation/Experience Accelerator/Taxonomy/_Taggable`
+#   # 6650FB34-7EA1-4245-A919-5CC0F002A6D7 is `/sitecore/templates/Foundation/Experience Accelerator/Presentation/_Designable`
+#   # 69F3677A-105C-41D6-9D7C-0F85A172A827 is `/sitecore/templates/Project/Sugcon2024/Base Templates/_MetaTags`
+#   # CB7020B6-B576-4B0D-AEE2-B81E9B69507A is `/sitecore/templates/Project/Sugcon2024/Base Templates/_OG Tags`
+#   Value: |
+#     {TODO_SOME_STARTER_GUID_HERE_PERHAPS}
+#     {TODO_ANOTHER_STARTER_GUID_HERE_PERHAPS}
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318" # This GUID keeps showing up in disparate codebases.
   Hint: __Icon
   Value: Office/16x16/document_tag.png # TODO:  CHANGE THIS TO SOMETHING PAGE-IER
