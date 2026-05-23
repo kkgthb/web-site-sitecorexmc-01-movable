@@ -3,18 +3,22 @@ ID: "31eb055f-22b3-5761-a193-c07243312e7c" # I get to make this value up myself.
 Parent: "7bec757b-0908-5bb8-afe8-80d13a01f8a3" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/doesntmatter/myveryfirstscsite.yml file's ID
 Template: "05fc59fd-8b69-5678-98f7-3f531d2de1f5" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/templates/Project/myfirstsitecollection/My Page Flavors/routablepage"
 Path: /sitecore/content/myfirstsitecollection/myveryfirstscsite/home
-# SharedFields:
-# - ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b89b5a3ad" # __Renderings -- the layout/rendering assignments for this page
-#   Hint: __Renderings
-#   Value: >
-#     <r xmlns:p="p" xmlns:s="s" p:p="1">
-#       <d id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
-#         <r uid="{TODO-RANDOM-UUID-NOT-V5-JUST-ANY-UUID-1}"
-#            s:id="{B4B1C02F-7AC8-5FD3-82B6-267C89858620}"
-#            s:ph="landing"
-#            s:ds="{TODO-GUID-OF-A-SECTIONPINK-DATASOURCE-CONTENT-ITEM}" />
-#       </d>
-#     </r>
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b89b5a3ad" # __Renderings -- the layout/rendering assignments for this page
+  Hint: __Renderings
+  # fe5d7fdf-89c0-4d99-9aa3-b5fbd009c9f3 is a `/sitecore/layout/Devices/Default`, it seems
+  # 4eb2ba9f-80ce-50a6-8ec4-d8de736f48e4 is UUIDv5 of this page ID with `landing:sectionpink:1`
+  # b4b1c02f-7ac8-5fd3-82b6-267c89858620 is ./authoringsrc/items/whatever/Project.FirstAttempt/items/renderings/myfirstsitecollection/sectionpink.yml (a serialized configuration)
+  # e83a1a0d-1c8e-573b-a1ed-67825b4b5544 is ./authoringsrc/items/whatever/Project.FirstAttempt/items/somecomponents/components/sectionpink/homeheropink.yml (a serialized content data item)
+  Value: >
+    <r xmlns:p="p" xmlns:s="s" p:p="1">
+      <d id="{fe5d7fdf-89c0-4d99-9aa3-b5fbd009c9f3}">
+        <r uid="{4eb2ba9f-80ce-50a6-8ec4-d8de736f48e4}"
+           s:id="{b4b1c02f-7ac8-5fd3-82b6-267c89858620}"
+           s:ph="landing"
+           s:ds="{e83a1a0d-1c8e-573b-a1ed-67825b4b5544}" />
+      </d>
+    </r>
 Languages:
 - Language: en
   Fields:

@@ -140,6 +140,7 @@ Some more values I don't want to lose track of:
 1. `f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e` -> `/sitecore/templates/System/Templates/Sections/Layout/Layout/__Renderings` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Templates/Sections/Layout/Layout/__Renderings.yml) is a template field)_
 1. `d2a6884c-04d5-4089-a64e-d27ca9d68d4c` -> `/sitecore/templates/Foundation/JSS Experience Accelerator/Placeholder Settings/Placeholder`  _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/Foundation/JSS%20Experience%20Accelerator/Placeholder%20Settings/Placeholder.yml) is a data template)_
 1. `7256bdab-1fd2-49dd-b205-cb4873d2917c` -> `/sitecore/templates/System/Layout/Placeholder/Data/Placeholder Key` _([which](https://github.com/mahen1105/XmCloudTest/blob/main/src/items/templates/templates/System/Layout/Placeholder/Data/Placeholder%20Key.yml) is a template field)_
+1. `fe5d7fdf-89c0-4d99-9aa3-b5fbd009c9f3` -> `/sitecore/layout/Devices/Default`, it seems
 
 ---
 
