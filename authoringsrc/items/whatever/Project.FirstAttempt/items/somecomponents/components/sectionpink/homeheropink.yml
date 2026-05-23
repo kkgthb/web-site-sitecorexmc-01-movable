@@ -1,0 +1,11 @@
+---
+ID: "e83a1a0d-1c8e-573b-a1ed-67825b4b5544" # I get to make this value up myself.  Used https://www.uuidtools.com/v5 to concatenate c3bbd1a3... with "homeheropink"
+Parent: "c3bbd1a3-3051-5bd8-9751-3250045ba9d3" # I need to refer to ./authoringsrc/items/whatever/Project.FirstAttempt/items/somecomponents/components/sectionpink.yml file's ID
+Template: "e3a3ff94-258a-5017-ace5-7f4e813f623b" # 5/22/2026 LLM says this should be the UUIDv5 that is the ID of the file with Path "/sitecore/templates/Project/myfirstsitecollection/My Components/sectionpink"
+Path: /sitecore/content/myfirstsitecollection/components/sectionpink/homeheropink
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb" # This GUID keeps showing up in disparate codebases.
+    Hint: __Display name
+    Value: Home Hero Pink
